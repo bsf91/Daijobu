@@ -16,10 +16,6 @@ header .container {
     font-size: x-large;
 }
 
-nav ul {
-    margin-right: 63px;
-}
-
 nav ul li {
     display: inline-flex;
     justify-content:space-between;
