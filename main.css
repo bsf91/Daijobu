@@ -122,12 +122,16 @@ footer {
     align-items: center;
 }
 
-footer form {
+.footer-content form {
+    gap: 6px;
+    display:flex ;
     font-size: 115%;
     font-family: "Fugaz One", sans-serif;
     margin-left: auto;
+    margin-right: auto;
     font-weight: 100;
     color: black
+    
 }
 
 footer .footer-content {
@@ -136,16 +140,28 @@ footer .footer-content {
 }
 
 button {
-    align-items: center;
+    background-color:rgb(248, 232, 180) ;
+    cursor: pointer;
     display: inline-block;
-    height: 27px;
+    height: 30px;
     width: 80px;
-    border-radius: 8%;
+    border: 3px solid rgb(91, 76, 145);
+    border-radius: 15%;
     font-family: "Fugaz One", sans-serif;
 }
 
+button:hover {
+    background-color:rgb(252, 41, 129)  ;
+}
+
+button:active {
+    background-color: rgb(252, 41, 129);
+    box-shadow: 0 5px rgb(54, 54, 54);
+    transform: translateY(4px);
+}
+
 footer input {
-    border-radius:2%;
+    border-radius:3%;
     height: 25px;
     width: 300px;
     font-size: 110%;
