@@ -117,32 +117,33 @@ h2 {
 footer {
     background-color: rgb(127, 107, 201);
     padding: 30px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
+    display:flex;
 }
 
-.footer-content form {
-    gap: 6px;
-    display:flex ;
+form {
     font-size: 115%;
     font-family: "Fugaz One", sans-serif;
-    margin-left: auto;
-    margin-right: auto;
     font-weight: 100;
-    color: black
-    
+    color: black;
 }
 
-footer .footer-content {
+.footer-content {
+    align-items: center;
+}
+
+.form-footer {
+    flex-wrap: wrap;
     display: flex;
     align-items: center;
+    gap: 10px;
+    padding-left: 20px;
 }
 
 button {
     background-color:rgb(248, 232, 180) ;
     cursor: pointer;
-    display: inline-block;
     height: 30px;
     width: 80px;
     border: 3px solid rgb(91, 76, 145);
