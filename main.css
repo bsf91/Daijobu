@@ -8,6 +8,11 @@ body {
     background-color:rgb(252, 244, 219) ;
 }
 
+header {
+    position: relative;
+    height: auto;
+}
+
 header h1 {
     font-family: "Staatliches", sans-serif;
     font-size: 350%;
@@ -28,18 +33,25 @@ header h1 {
 body > header {
     background-color: rgb(127, 107, 201);
     padding: 30px;
+    position: relative;
 }
 
 header .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
     font-size: x-large;
 }
 
-nav ul li {
+nav {
+    align-self: center;
+}
+
+
+nav ul li{
     display:inline;
     justify-content:space-between;
+    
 }
 
 nav ul li a {
@@ -48,11 +60,52 @@ nav ul li a {
     text-decoration: none;
     margin-left: 15px;
     font-size: larger;
+    
 }
 
 nav ul li a:hover {
     text-decoration: underline;
     font-size: 140%;
+}
+
+.form-header {
+    margin-right: 30px;
+    right: 0;
+    top: 0;
+    padding: 15px 0;
+    align-self: flex-start;
+    position: absolute;
+    font-size: small;
+}
+
+.header-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.header-button button {
+    background-color:rgb(248, 232, 180); ;
+    cursor: pointer;
+    height: 25px;
+    width: 70px;
+    border: 3px solid rgb(91, 76, 145);
+    border-radius: 15%;
+    font-family: "Fugaz One", sans-serif;
+    font-size: 12px;
+}
+
+.form-header input {
+    font-family:"Bangers"; 
+    width: 135px;
+    border-radius: 5%;
+    background-color:rgb(233, 230, 245) ;
+}
+
+.form-header label {
+    padding-left: 10px;
 }
 
 h2 {
@@ -76,25 +129,34 @@ article > header {
 }
 
 .articles {
-    display: flex
+    justify-content: space-between;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start; 
 }
 
 .articles article {
-    justify-content: space-around;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
     color: rgb(54, 54, 54);
+    width: 650px; 
+    margin-right: 20px; 
 }
 
-article img {
-width: 98.5%;
-height: 800px;
-object-fit:cover;
-border-radius: 10%;
+.articles article img {
+    width: 100%; 
+    height: 800px;
+    border-radius: 10%;
+    object-fit: cover;
 }
+
 article p {
     font-size: 110%;
     padding: 15px 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
+    width: 100%;
 }
 
 .articles article,
@@ -139,8 +201,8 @@ form {
     padding-left: 20px;
 }
 
-button {
-    background-color:rgb(248, 232, 180) ;
+footer button {
+    background-color:rgb(248, 232, 180); ;
     cursor: pointer;
     height: 30px;
     width: 80px;
@@ -150,7 +212,8 @@ button {
 }
 
 button:hover {
-    background-color:rgb(252, 41, 129)  ;
+    background-color:rgb(252, 41, 129);
+    border-color:rgb(248, 232, 180);
 }
 
 button:active {
