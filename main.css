@@ -97,15 +97,15 @@ article p {
     font-weight: 500;
 }
 
-footer p {
-    font-size: 115%;
-    font-family: "Fugaz One", sans-serif;
-    color: black
-}
-
 .articles article,
 h2 {
     margin-left: 20px;
+}
+
+footer p {
+    font-size: 18px;
+    font-family: "Fugaz One", sans-serif;
+    color: black
 }
 
 #imagem_clicavel:hover {
@@ -121,7 +121,7 @@ footer {
 }
 
 form {
-    font-size: 115%;
+    font-size: 18px;
     font-family: "Fugaz One", sans-serif;
     font-weight: 100;
     color: black;
