@@ -35,7 +35,6 @@ header .container {
     justify-content: space-between;
     align-items: center;
     font-size: x-large;
-    margin-right: 3%;
 }
 
 nav ul li {
@@ -76,18 +75,17 @@ article > header {
     padding-top: 10px;
 }
 
-
 .articles {
     display: flex
 }
 
 .articles article {
-    justify-content: space-between;
+    justify-content: space-around;
     color: rgb(54, 54, 54);
 }
 
 article img {
-width: 93%;
+width: 98.5%;
 height: 800px;
 object-fit:cover;
 border-radius: 10%;
